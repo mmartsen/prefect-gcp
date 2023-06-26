@@ -592,6 +592,7 @@ class CloudRunJob(Infrastructure):
                             "spec": {
                                 "containers": containers,
                                 "timeoutSeconds": timeout_seconds,
+                                "maxRetries": "0",
                             }  # TaskSpec
                         }
                     },
